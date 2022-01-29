@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hasil"></p>
+    <script>
+        var x = prompt("Sebutkan 3 Merek Makanan : ");
+		var h = [];
+
+		if(x){
+			h.push(x); 
+			var x = prompt("Masukan Lagi : ");
+			if(x){
+				h.push(x);
+				var x = prompt("Masukan Lagi : ");
+				if(x){
+					h.push(x);
+					document.getElementById("hasil").innerHTML = "Hasil Makanan Yang Anda Input : "+ h; 
+				}else{
+					document.getElementById("hasil").innerHTML = "Hasil Makanan Yang Anda Input : "+ h;
+				}
+			}else{
+				document.getElementById("hasil").innerHTML = "Hasil Makanan Yang Anda Input : "+ h;
+			}
+		}else{
+			document.getElementById("hasil").innerHTML = "Anda Belum Input Apa-Apa Silahkan Refresh";
+		}
+
+
+    </script>
+</body>
+</html>
+</body>
+
+</html>
